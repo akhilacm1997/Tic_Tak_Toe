@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <!-- importing css file -->
+     <!-- importing ajax file -->
+
+
+</head>
+
+<body>
+    <div id="main">
+
+                    <!-- <img src="backgroundpic1.jpg" width=1350 height=500 > -->
+
+<h1 id="mainheading">Tic Tac Toe </h1>
+	<table>
+		<tr>
+			<td  class="bx"id="00" onClick="player1('0','0')"></td>
+			<td  class="bx"id="01" onClick="player1('0','1')"></td>
+			<td  class="bx" id="02"onClick="player1('0','2')"></td>
+        <!-- set box id same as index -->
+          <!-- choice your input by mouseclick -->
+		</tr>
+		<tr>
+			<td  class="bx"id="10"onClick="player1('1','0')"></td>
+			<td  class="bx"id="11"onClick="player1('1','1')"></td>
+			<td class="bx"id="12"onClick="player1('1','2')"></td>
+        <!-- set box id same as index -->
+        <!-- choice your input by mouseclick -->
+
+		</tr>
+		<tr>
+			<td  class="bx"id="20" onClick="player1('2','0')"></td>
+			<td class="bx"id="21" onClick="player1('2','1')"></td>
+			<td  class="bx"id="22"onClick="player1('2','2')"></td>
+        <!-- set box id same as index -->
+          <!-- choice your input by mouseclick -->
+		</tr>
+    </table>
+    <div id="instructions">
+       <p>. The game is played on a grid that's 3 squares by 3 squares.<br><br>
+
+        . Player 1 is "X" and Player 2 is "O".<br><br>
+
+        . Players take turns putting their marks in empty squares.<br><br>
+
+        . Any player to get 3 of same (up, down, across, or diagonally) is the winner.<br><br>
+
+        . When all 9 squares are full, the game is over.</p>
+    </div>
+        <div id="player1">
+        <p >player 1 : X</p>
+        <p >player 2 : O</p>
+      </div>
+      <div id="whichplayer1">  <h1 id="whichplayer">player 1 move</h1>  </div>
+ <section id="game">
+    <h1 id="gamestatus" class="glitch"></h1>
+    <input id="replay" type="button" value="play again" onClick="document.location.reload(true)">
+    <!-- show game gamestatus -->
+   
+  </section>
+    <h1 id="gameover"></h1>
+    <button id="play">Start Game</button>
+   
+    <!-- reloading  the page  by click-->
+<p id="count"></p>
+        <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- importing javascript file -->
+</div>
+
+    </body>
+    </html>
